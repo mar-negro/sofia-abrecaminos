@@ -1,0 +1,36 @@
+<!-- Bolita flotante -->
+<div id="sofIA-bubble" onclick="openSofIA()">💬</div>
+
+<!-- Chat embed -->
+<iframe id="sofIA-chat" src="https://chat.openai.com/g/g-asst_F3AlseelieJxnVrbQW2EI0TW" style="display:none;"></iframe>
+
+<style>
+  #sofIA-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #000;
+    color: #fff;
+    padding: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    z-index: 9999;
+  }
+  #sofIA-chat {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 400px;
+    height: 600px;
+    border: none;
+    z-index: 9999;
+  }
+</style>
+
+<script>
+  function openSofIA() {
+    const chat = document.getElementById("sofIA-chat");
+    chat.style.display = chat.style.display === "none" ? "block" : "none";
+  }
+</script>
